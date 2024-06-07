@@ -14,7 +14,7 @@
             <input type="text" class="form-control" id="idTitulo" placeholder="Matematicas">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label" id="idDate">Fecha de Vencimiento</label>
+            <label for="exampleFormControlInput1" class="form-label">Fecha de Vencimiento</label>
             <input type="date" class="form-control" id="idDate">
         </div>
         <select class="form-select" aria-label="Default select example" id="IdPrioridad">
@@ -29,7 +29,24 @@
        
     </div>
     <div class="container col-sm-5">
-        <button type="button" class="btn btn-primary" onclick="sumar()">Agregar Tarea</button>
+        <button type="button" class="btn btn-primary" onclick="AgregarDatos()">Agregar Tarea</button>
+    </div>
+    <div class="row g-3 container mt-5 mx-auto col-sm-5">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Fecha de Vencimiento</th>
+                <th scope="col">Prioridad</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody id="tbo">
+              
+            </tbody>
+          </table>
     </div>
     
     <script src="js/script.js"></script>
