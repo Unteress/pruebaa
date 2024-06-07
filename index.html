@@ -21,12 +21,11 @@
             <option selected>Seleccione la prioridad de la tarea</option>
             <option value="1">Alta</option>
             <option value="2">Baja</option>
-          </select>
+        </select>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Descripcion de la tarea</label>
             <textarea class="form-control" id="idDescripcion" rows="3"></textarea>
         </div>
-       
     </div>
     <div class="container col-sm-5">
         <button type="button" class="btn btn-primary" onclick="AgregarDatos()">Agregar Tarea</button>
@@ -44,28 +43,20 @@
               </tr>
             </thead>
             <tbody id="tbo">
-              
                 
             </tbody>
           </table>
-          <div class="container col-sm-5">
-        <button type="button" class="btn btn-primary" onclick="MarcarCompoCompletado()">Marcar Completado</button>
+
+        <!-- Nuevo select para mostrar tareas -->
+        <select class="form-select" aria-label="Default select example" id="selectTareas">
+            <option selected>Seleccione una tarea para eliminar</option>
+        </select>
+
+        <!-- Botón para eliminar tarea -->
+        <div class="container col-sm-5">
+            <button type="button" class="btn btn-primary" onclick="EliminarTarea()">Eliminar Tarea</button>
+        </div>
     </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
