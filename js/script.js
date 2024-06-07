@@ -67,3 +67,22 @@ function EliminarTarea() {
         alert("Por favor, seleccione una tarea para eliminar.");
     }
 }
+
+function BuscarTarea() {
+    var input = document.getElementById("idBusqueda").value.toLowerCase();
+    var listaTareas = document.getElementById("tbo");
+    var items = listaTareas.getElementsByTagName("tr");
+    var listaResultados = document.getElementById("ListaTareasBuscadas");
+    listaResultados.innerHTML = "";
+
+    for (var i = 0; i < items.length; i++) {
+        var titulo = items[i].getElementsByTagName("td")[0].textContent.toLowerCase(); // Se obtiene el texto del primer <td> en la fila
+        if (titulo.indexOf(input) > -1) {
+            var li = document.createElement("li");
+            li.className = "list-group-item";
+            li.textContent = titulo;
+            listaResultados.appendChild(li);
+        }
+    }
+}
+

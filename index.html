@@ -57,7 +57,17 @@
             <button type="button" class="btn btn-primary" onclick="EliminarTarea()">Eliminar Tarea</button>
         </div>
     </div>
-    
+    <div id="busqueda"  class="row g-3 container mt-5 mx-auto col-sm-5">
+        <h2>Buscar por nombre de tarea</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Busqueda</label>
+            <input type="text" class="form-control" id="idBusqueda" placeholder="Nombre de la tarea" onkeyup="BuscarTarea()">
+        </div>
+        
+        <ul class="list-group" id="ListaTareasBuscadas">
+            
+        </ul>
+    </div>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
